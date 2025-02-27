@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+    font-family: Georgia;
+    line-height: 1.6;
+    background-color: #F3E5D8; 
+    color: #6D4C41; 
+    margin: 0;
+}
+
+/* Cabecera */
+header {
+    background-color: #8D6E63; 
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #C1A38A; 
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    /* Sin inline-block, los enlaces (a) serían elementos en línea y no podríamos ajustar su padding o margen correctamente. */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Fondo de cada sección */
+#mitos {
+    background-color: #EBDCD5; 
+}
+
+#mitologia-griega {
+    background-color: rgba(255, 239, 199, 0.368);
+}
+
+#tabla-mitos {
+    background-color: #ffe9d4; 
+}
+
+#comentarios {
+    background-color: rgb(246, 217, 197); 
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    background-color: #F8EDE3; 
+}
+
+th, td {
+    border: 1px solid #C1A38A; /* Bordes marrón pastel suave */
+    padding: 10px;
+}
+
+th {
+    background-color: #8D6E63;
+    color: white;
+}
+
+/* Formulario */
+form {
+    background-color: #F8EDE3; 
+    padding: 15px;
+    border-radius: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #f8e0d7;
+    color: #6D4C41;
+    border: 1px solid #bca797;
+}
+
+input[type="submit"] {
+    background-color: #9e8068;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #81756b;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #8D6E63;
+    color: white;
+}
+
+#la-llorona {
+    position: relative;
+    overflow: hidden; /* Evita que la niebla salga del artículo */
+    background: linear-gradient(to bottom, #2e4d5b, #182024); /* Fondo degradado azul grisáceo */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+#imagen-llorona {
+    width: 270px;
+    float: left;  /* Coloca la imagen a la izquierda */
+    margin: 0px 30px 10px 5px;  /* Espaciado entre la imagen y el texto */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);  /* Sombra */
+}
+
+/* Efecto de niebla */
+.niebla {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('../images/niebla.jpg') repeat-x;
+    background-size: contain;
+    opacity: 0.3;
+    z-index: 1;  /* Asegura que la niebla esté sobre el fondo pero debajo del texto */
+    animation: moverNiebla 60s linear infinite;
+}
+
+/* Animación para mover la niebla */
+@keyframes moverNiebla {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+#la-pata-sola{
+    background: linear-gradient(to bottom, #A3B18A, #83bb90);
+    color: #293c21;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+#imagen-la-pata-sola{
+    float: right;
+    width: 400px;
+    margin: 0px 5px 10px 30px;
+    overflow: hidden;
+}
+
