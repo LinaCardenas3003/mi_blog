@@ -105,22 +105,22 @@ footer {
 /* ++++++++++++++++++++++++++++++ LA LLORONA +++++++++++++++++++++++++ */
 .la-llorona{
     display: inline-flex;
+    padding: 30px;
 }
   
 .texto-llorona{
-    margin: 50px 40px 20px 30px;;
+    margin: 50px 50px 0px 50px;
 }
 
 .imagen-llorona{
-    overflow: hidden;
-    width: 200px;
-    border-radius: 10px;
-    margin: 0px 20px 0px 30px;
+    width: 235px;
+    margin: 0px 0px 0px 30px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);  /* Sombra */
 }
 
 .titulo-llorona{
     text-align: center;
-    margin: 20px 20px 20px 30px;
+    margin: 0px 0px 20px 30px;
 }
   
 [class*="llorona"]{
@@ -129,23 +129,6 @@ footer {
     color: white;
     position: relative;/* Evita que la niebla salga del artículo */
     overflow: hidden; /* Evita que la niebla salga del artículo */
-}
-
-#la-llorona {
-    position: relative;/* Evita que la niebla salga del artículo */
-    overflow: hidden; /* Evita que la niebla salga del artículo */
-    padding: 40px;
-    border-radius: 10px;
-    color: white;
-}
-
-
-#imagen-llorona {
-    width: 220px;
-    float: left;  /* Coloca la imagen a la izquierda */
-    margin: 0px 30px 10px 5px;  /* Espaciado entre la imagen y el texto */
-    border-radius: 10px;  /* Bordes redondeados */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);  /* Sombra */
 }
 
 /* Efecto de niebla */
@@ -172,19 +155,32 @@ footer {
     }
 }
 
-#la-pata-sola{
-    background: linear-gradient(to bottom, #A3B18A, #83bb90);
-    color: #293c21;
-    border-radius: 10px;
-    padding: 40px;
-    overflow: hidden;
+/* +++++++++++++++++++++++++LA PATA SOLA +++++++++++++++++++++++++ */
+
+.pata-sola{
+    display: inline-flex;
+    padding: 30px;
+}
+  
+.texto-pata-sola{
+    margin: 0px 0px 0px 30px;
 }
 
-#imagen-la-pata-sola{
-    float: right;
-    width: 280px;
-    margin: -0px 5px 10px 30px;
+.imagen-pata-sola{
+    width: 350px;
+    margin: 50px 50px 10px 50px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);  /* Sombra */
+}
+
+.titulo-pata-sola{
+    margin: 0px 0px 20px 30px;
+}
+  
+[class*="pata-sola"]{
+    background: linear-gradient(to bottom, #A3B18A, #83bb90); border-radius: 10px;
+    color: #293c21;
+    position: relative;/* Evita que la niebla salga del artículo */
+    overflow: hidden; /* Evita que la niebla salga del artículo */
 }
 
 
