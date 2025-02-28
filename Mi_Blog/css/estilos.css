@@ -1,3 +1,6 @@
+/* Importar fuentes cursivas */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 /* Estilos generales */
 body {
     font-family: Georgia;
@@ -7,13 +10,17 @@ body {
     margin: 0;
 }
 
+
 /* Cabecera */
 header {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px; /* Ajusta el tamaño */
     background-color: #8D6E63; 
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     color: white;
 }
+
 
 /* Barra de navegación */
 nav {
@@ -33,8 +40,7 @@ nav a {
 section {
     padding: 20px;
     margin: 20px auto;
-    border-radius: 10px;
-    max-width: 1400px;  /* Evita que se estiren demasiado en pantallas grandes */
+    max-width: 1500px;  /* Evita que se estiren demasiado en pantallas grandes */
 }
 
 /* Fondo de cada sección */
@@ -96,16 +102,29 @@ footer {
     color: white;
 }
 
+footer a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #46332d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
 /* ++++++++++++++++++++++++++++++ USO DE FLEX +++++++++++++++++++++++++ */
 [class*="flex"]{
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
     padding: 30px;
     gap: 30px;
+    position: relative;/* Evita que la niebla salga del artículo */
+    overflow: hidden; /* Evita que la niebla salga del artículo */
 }
 
 [class*="texto"]{
     flex: 1;
+    padding: 0px 20px 0px 30px;
     min-width: 280px; /* Asegura que el texto no se haga demasiado pequeño */
 }
 
@@ -113,16 +132,16 @@ footer {
 
 .titulo-llorona{
     text-align: center;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 20px 45px;
 }
 
 .texto-llorona{
-    margin: 45px 20px 0px 20px;
+    margin: 60px 20px 0px 20px;
 }
 
 .imagen-llorona{
-    width: 280px;
-    margin: 10px 0px 0px 20px;
+    width: 270px;
+    margin: 10px 0px 0px 45px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
@@ -130,8 +149,6 @@ footer {
     background: linear-gradient(to bottom, #2e4d5b, #182024); /* Fondo degradado azul grisáceo */
     border-radius: 10px;
     color: rgb(207, 201, 201);
-    position: relative;/* Evita que la niebla salga del artículo */
-    overflow: hidden; /* Evita que la niebla salga del artículo */
 }
 
 /* Efecto de niebla */
@@ -158,7 +175,9 @@ footer {
 /* +++++++++++++++++++++++ EL SILBON +++++++++++++++++++++++++ */
 
 .titulo-el-silbon{
-    margin: 0px 0px 20px 0px;
+    margin: 0px;
+    padding: 0px 90px;
+    display: inline-block;
 }
    
 .texto-el-silbon{
@@ -166,8 +185,8 @@ footer {
 }
 
 .imagen-el-silbon{
-    width: 360px;
-    margin: 70px 20px 0px 20px;
+    width: 340px;
+    margin: 60px 30px 0px 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
@@ -175,15 +194,13 @@ footer {
     background: linear-gradient(to bottom, #2f3840, #252525); 
     border-radius: 10px;
     color:#A8A9AD;
-    position: relative;/* Evita que la niebla salga del artículo */
-    overflow: hidden; /* Evita que la niebla salga del artículo */
 }
 
 /* +++++++++++++++++++++++ EL SOMBRERON +++++++++++++++++++++++++ */
 
 .titulo-el-sombreron{
     text-align: center;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 20px 45px;
 }
 
 .texto-el-sombreron{
@@ -191,8 +208,8 @@ footer {
 }
 
 .imagen-el-sombreron{
-    width: 280px;
-    margin: 10px 0px 0px 20px;
+    width: 250px;
+    margin: 10px 0px 0px 45px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
@@ -200,15 +217,15 @@ footer {
     background: linear-gradient(to bottom, #4b1f27, #1b0b0e); /* Fondo degradado azul grisáceo */
     border-radius: 10px;
     color: #caab96;
-    position: relative;/* Evita que la niebla salga del artículo */
-    overflow: hidden; /* Evita que la niebla salga del artículo */
 }
 
 
 /* +++++++++++++++++++++++ EL CHUPA CABRAS +++++++++++++++++++++++++ */
 
 .titulo-chupa-cabras{
-    margin: 0px 0px 20px 0px;
+    margin: 0px;
+    padding: 0px 50px;
+    display: inline-block;
 }
    
 .texto-chupa-cabras{
@@ -216,8 +233,8 @@ footer {
 }
 
 .imagen-chupa-cabras{
-    width: 410px;
-    margin: 70px 20px 0px 20px;
+    width: 350px;
+    margin: 70px 30px 0px 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
@@ -230,16 +247,17 @@ footer {
 /* +++++++++++++++++++++++++LA PATA SOLA +++++++++++++++++++++++++ */
 
 .titulo-pata-sola{
-    margin: 0px 0px 20px 0px;
+    text-align: center;
+    margin: 0px 0px 20px 45px;
 }
    
 .texto-pata-sola{
-    margin: 10px 0px 0px 20px;
+    margin: 45px 20px 0px 20px;
 }
 
 .imagen-pata-sola{
-    width: 430px;
-    margin: 70px 20px 0px 20px;
+    width: 410px;
+    margin: 10px 0px 0px 45px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
@@ -247,27 +265,74 @@ footer {
     background: linear-gradient(to bottom, #87a84e, #1b622b); 
     border-radius: 10px;
     color: #0e2b02;
+    position: relative;
+    overflow: hidden;
 }
 
 /* ++++++++++++++++++++++++ EL MOHAN +++++++++++++++++++++++++ */
 .titulo-el-mohan{
-    text-align: center;
-    margin: 0px 0px 20px 20px;
+    margin: 0px;
+    padding: 0px 90px;
+    display: inline-block;
 }
    
 .texto-el-mohan{
-    margin: 45px 20px 0px 20px;
+    margin: 10px 0px 0px 20px;
 }
 
 .imagen-el-mohan{
     width: 300px;
-    margin: 10px 0px 0px 20px;
+    margin: 60px 30px 0px 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
 [class*="el-mohan"]{
-    background: linear-gradient(to bottom, #af9138, #554018); 
+    background: linear-gradient(to bottom, rgb(146, 146, 79), #443416); 
     border-radius: 10px;
     color: rgb(195, 195, 117);
 }
 
+/* ++++++++++++++++++++++++ PERSEFONE Y HADES +++++++++++++++++++++++++ */
+.titulo-persefone-hades{
+    text-align: center;
+    margin: 0px 0px 20px 20px;
+}
+
+.texto-persefone-hades{
+    margin: 0px 20px 0px 20px;
+}
+
+.imagen-persefone-hades{
+    width: 400px;
+    margin: 10px 0px 0px 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+  
+[class*="persefone-hades"]{
+    background: linear-gradient(to right, #101f25, #949344); /* Fondo degradado azul grisáceo */
+    border-radius: 10px;
+    color: rgb(207, 201, 201);
+}
+
+/* ++++++++++++++++++++++++ LA HISTORIA DE ICARO +++++++++++++++++++++++++ */
+.titulo-icaro{
+    margin: 0px;
+    padding: 0px 90px;
+    display: inline-block;
+}
+   
+.texto-icaro{
+    margin: 10px 0px 0px 20px;
+}
+
+.imagen-icaro{
+    width: 300px;
+    margin: 60px 30px 0px 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+  
+[class*="icaro"]{
+    background: radial-gradient(circle, #F4D160, #f7b933, #A0C4FF, #1254b6 120%);
+    border-radius: 10px;
+    color: rgb(33, 68, 226);
+}
