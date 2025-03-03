@@ -13,14 +13,18 @@ body {
 
 /* Cabecera */
 header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     font-family: "Dancing Script", cursive;
-    font-size: 30px; /* Ajusta el tamaño */
+    font-size: 37px;
     background-color: #8D6E63; 
     text-align: center;
-    padding: 5px;
     color: white;
 }
 
+.imagen-titulo{
+    width: 100%;
+}
 
 /* Barra de navegación */
 nav {
@@ -419,7 +423,7 @@ footer a {
 
 .imagen-narciso{
     width: 480px;
-    margin: 80px 30px 0px 20px;
+    margin: 70px 30px 0px 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
@@ -440,7 +444,7 @@ footer a {
 }
 
 .imagen-troya{
-    width: 400px;
+    width: 380px;
     margin: 10px 0px 0px 45px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -464,8 +468,8 @@ footer a {
 }
 
 .imagen-aquiles{
-    width: 400px;
-    margin: 60px 30px 0px 20px;
+    width: 350px;
+    margin: 30px 30px 0px 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
   
