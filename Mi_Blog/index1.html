@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <!-- Cabecera con título del blog -->
     <header>
         <img src="images/titulo3.png" alt="" class="imagen-titulo">
-        <h1>Mitos de la Antigua Grecia</h1>
+        <h1>Los Mejores Mitos de la Antigua Grecia</h1>
         <img src="images/titulo4.png" alt="" class="imagen-titulo">
     </header>
 
@@ -20,6 +21,10 @@
         <a href="#mitologia-griega">Mitología Griega</a>
         <a href="#contacto">Contacto</a>
     </nav>
+
+    <div class="particle" style="top: 50px; left: 100px;"></div>
+    <div class="particle" style="top: 200px; left: 300px;"></div>
+
     
     <!-- Contenido principal -->
     <main>
@@ -198,7 +203,7 @@
 
             <article class="flex-aquiles">
                 <div class="texto-aquiles">
-                    <h2 class="titulo-aquiles">Aquiles y su talón</h2>
+                    <h2 class="titulo-aquiles">El talón de Aquiles</h2>
                     <p>Aquiles fue uno de los héroes más importantes de la mitología griega y el más grande guerrero de la guerra de Troya. Era hijo de Peleo, rey de 
                         los mirmidones, y Tetis, una ninfa del mar. Desde su nacimiento, su madre supo que su destino sería extraordinario, pero también peligroso.</p>  
                     <p>Para hacerlo invulnerable, Tetis lo sumergió en las aguas del río Estigia, cuyas aguas concedían invulnerabilidad a quienes se bañaban en ellas. 
@@ -219,11 +224,100 @@
                     <img src="images/aquiles.webp" alt="Imagen de Aquiles" class="imagen-aquiles">
                 </div>
             </article>
-            <hr>
+        </section>
 
-            
+        <!-- Sección de resumen -->
+        <section id="tabla-mitos">
+            <h2>Resumen general</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Origen</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Perséfone y Hades</td>
+                    <td>Mitología griega</td>
+                    <td>Hades raptó a Perséfone y la llevó al inframundo. Su madre, Deméter, la buscó desesperadamente, lo que causó el invierno. Finalmente, se acordó que pasaría parte del año en el inframundo y parte en la Tierra, explicando las estaciones.</td>
+                </tr>
+                <tr>
+                    <td>La caída de Ícaro</td>
+                    <td>Mitología griega</td>
+                    <td>Ícaro, hijo de Dédalo, escapó del laberinto de Creta con alas de cera. Desobedeció a su padre, volando demasiado alto, lo que hizo que el sol derritiera sus alas y cayera al mar.</td>
+                </tr>
+                <tr>
+                    <td>El origen de Medusa</td>
+                    <td>Mitología griega</td>
+                    <td>Medusa era una bella sacerdotisa de Atenea, pero fue castigada por la diosa después de ser violada por Poseidón en su templo. Se convirtió en un monstruo con serpientes en la cabeza, cuya mirada petrificaba a quien la veía. </td>
+                </tr>
+                <tr>
+                    <td>El mito de Sísifo</td>
+                    <td>Mitología griega</td>
+                    <td>Sísifo engañó a los dioses y fue condenado a empujar una roca colina arriba por la eternidad, solo para verla caer de nuevo, representando el castigo eterno y el esfuerzo inútil.</td>
+                </tr>
+                <tr>
+                    <td>El mito de Eco</td>
+                    <td>Mitología griega</td>
+                    <td>Eco era una ninfa castigada por Hera, que la condenó a repetir solo las últimas palabras de los demás. Se enamoró de Narciso, pero él la rechazó y se consumió en la tristeza hasta desaparecer, dejando solo su voz.</td>
+                </tr>
+                <tr>
+                    <td>El mito de Narciso</td>
+                    <td>Mitología griega</td>
+                    <td>Narciso era un joven hermoso que rechazaba a sus pretendientes. Como castigo, los dioses lo hicieron enamorarse de su propio reflejo en el agua. Al no poder apartarse, murió y en su lugar creció una flor, el narciso.</td>
+                </tr>
+                <tr>
+                    <td>La Guerra de Troya y el Juicio de París</td>
+                    <td>Mitología griega</td>
+                    <td>La guerra comenzó cuando París, príncipe troyano, otorgó la manzana de oro a Afrodita a cambio del amor de Helena, esposa de Menelao. Esto desató la guerra entre griegos y troyanos, narrada en la "Ilíada". </td>
+                </tr>
+                <tr>
+                    <td>El mito de Narciso</td>
+                    <td>Mitología griega</td>
+                    <td>Tetis sumergió a su hijo Aquiles en la laguna Estigia para hacerlo invulnerable, pero lo sostuvo del talón, dejándolo como su único punto débil. Fue herido de muerte en esa zona durante la Guerra de Troya. </td>
+                </tr>
+            </table>
         </section>
     </main>
+
+    <section id="comentarios">
+        <h2>Comparte tu historia</h2>
+        <p>¿Cuál es tu mito favorito?</p>
+
+        <form action="#">
+            <span>Nombre: </span><input type="text" name="nombre" id="nombre" placeholder="Tu nombre"><br><br>
+            <span>Tu comentario</span><br><textarea name="comentario" id="comentario" rows="4"
+                placeholder="Escribe aquí tu comentario..."></textarea><br><br>
+            <span>Mito favorito:</span>
+            <select id="mito-favorito" name="mito-favorito">
+                <option value="">Selecciona uno</option>
+                <option value="flex-persefone-hades">Perséfone y Hades</option>
+                <option value="flex-icaro">La caída de Ícaro</option>
+                <option value="flex-medusa">El origen de Medusa</option>
+                <option value="flex-sisifo">El mito de Sísifo</option>
+                <option value="flex-eco">El mito de Eco</option>
+                <option value="flex-narciso">El mito de Narciso</option>
+                <option value="flex-troya">La Guerra de Troya y el Juicio de París</option>
+                <option value="flex-aquiles">El talón de Aquiles</option>
+            </select><br><br>
+
+            <input type="submit" value="Enviar comentario">
+        </form>
+
+        <h3>Comentarios recientes:</h3>
+        <ul>
+            <li><strong>José:</strong> En mi pueblo hay una versión de La Llorona que es aún más aterradora.</li>
+            <li><strong>María:</strong> Siempre he creído que el Chupacabras es real... ¿Alguien más?</li>
+            <li><strong>Ana:</strong> El mito de Medusa siempre me ha parecido injusto. No fue su culpa lo que pasó.</li>
+            <li><strong>Pedro:</strong> La historia de Ícaro me recuerda lo importante que es escuchar los consejos.</li>
+            <li><strong>Lucía:</strong> El juicio de París desencadenó la Guerra de Troya... ¡Todo por una manzana dorada!</li>
+        </ul>
+    </section>
+
+
+    <!-- Pie de página con información de contacto -->
+    <footer id="contacto">
+        <p>Contacto: blogmitos@ejemplo.com</p>
+    </footer>
 
 </body>
 </html>

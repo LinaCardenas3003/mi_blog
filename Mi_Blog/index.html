@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Mitos y Leyendas</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/android-chrome-512x512.png" sizes="512x512">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -27,6 +35,20 @@
     <main>
         <!-- Sección de mitos y leyendas -->
         <section id="mitos">
+
+            <!-- Video introductorio -->
+            <div class="video">
+                <h1>¿Cuál es la diferencia entre MITO y LEYENDA?</h1>
+                <video src="video/¿Cuál es la diferencia entre MITO y LEYENDA_.mp4" width="900" controls></video>
+            </div>
+
+            <!-- Párrafo introductorio -->
+            <p class="intro-paragraph">
+                A lo largo de los siglos, las leyendas han formado parte de nuestra cultura, transmitiéndose de generación en generación.
+                Estas historias misteriosas nos permiten conocer las creencias y temores de nuestros ancestros.
+                Sumérgete en este mundo de relatos fascinantes y descubre los mitos más impactantes de Latinoamérica.
+            </p>
+
             <article class="flex-la-llorona">
                 <div>
                     <h2 class="titulo-llorona">La Llorona</h2>
@@ -184,13 +206,33 @@
                 </tr>
                 <tr>
                     <td>La Llorona</td>
-                    <td>México</td>
-                    <td>Una mujer que llora por sus hijos en las noches.</td>
+                    <td>México y América Latina</td>
+                    <td>Espíritu de una mujer que llora por sus hijos perdidos. Se dice que aparece cerca de ríos o lagunas, emitiendo un lamento aterrador.</td>
+                </tr>
+                <tr>
+                    <td>El Silbón</td>
+                    <td>Venezuela y Colombia</td>
+                    <td>Alma en pena de un joven que asesinó a su padre. Se le escucha silbar y carga un saco con huesos. Se dice que persigue a los borrachos e infieles.</td>
+                </tr>
+                <tr>
+                    <td>El Sombrerón</td>
+                    <td>Guatemala y México</td>
+                    <td>Pequeño hombre de sombrero grande que encanta a las mujeres con su música, trenzando su cabello y atormentándolas en la noche.</td>
                 </tr>
                 <tr>
                     <td>El Chupacabras</td>
-                    <td>Latinoamérica</td>
-                    <td>Criatura misteriosa que ataca al ganado.</td>
+                    <td>Puerto Rico y América Latina</td>
+                    <td>Criatura misteriosa que ataca al ganado y les succiona la sangre. Se describe como un ser con espinas en la espalda y ojos rojos.</td>
+                </tr>
+                <tr>
+                    <td>La Pata Sola</td>
+                    <td>Colombia</td>
+                    <td>Espíritu de una mujer con una sola pierna que asusta a los hombres infieles en la selva, apareciendo con una apariencia hermosa y luego transformándose en un ser aterrador.</td>
+                </tr>
+                <tr>
+                    <td>El Mohán</td>
+                    <td>Colombia</td>
+                    <td>Ser peludo y fuerte que habita en los ríos. Es conocido por enamorar a las mujeres y asustar a los pescadores, además de robar el oro de los pueblos.</td>
                 </tr>
             </table>
         </section>
@@ -207,11 +249,12 @@
             <span>Mito o leyenda favorita:</span>
             <select id="mito-favorito" name="mito-favorito">
                 <option value="">Selecciona uno</option>
-                <option value="la-llorona">La Llorona</option>
-                <option value="chupacabras">El Chupacabras</option>
-                <option value="medusa">Medusa</option>
-                <option value="icar">Ícaro</option>
-                <option value="otro">Otro</option>
+                <option value="flex-la-llorona">La Llorona</option>
+                <option value="flex-el-silbon">El Silbón</option>
+                <option value="flex-el-sombreron">El Sombrerón</option>
+                <option value="flex-chupa-cabras">El Chupacabras</option>
+                <option value="flex-pata-sola">La Pata Sola</option>
+                <option value="flex-el-mohan">El Mohán</option>
             </select><br><br>
 
             <input type="submit" value="Enviar comentario">
@@ -221,6 +264,9 @@
         <ul>
             <li><strong>José:</strong> En mi pueblo hay una versión de La Llorona que es aún más aterradora.</li>
             <li><strong>María:</strong> Siempre he creído que el Chupacabras es real... ¿Alguien más?</li>
+            <li><strong>Carlos:</strong> Mi abuelo me contaba historias sobre El Silbón. Decía que lo escuchó una vez en los llanos.</li>
+            <li><strong>Andrea:</strong> Me da miedo la historia de La Pata Sola, porque de niña mi abuela me decía que se aparecía en los bosques.</li>
+            <li><strong>Fernando:</strong> Siempre me ha parecido interesante El Mohán, especialmente por sus conexiones con los ríos y el oro escondido.</li>
         </ul>
     </section>
 
