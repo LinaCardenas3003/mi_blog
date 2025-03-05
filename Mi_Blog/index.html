@@ -26,35 +26,37 @@
 
     <!-- Barra de navegación -->
     <nav>
-        <a href="#inicio">Inicio</a>
         <a href="#mitos">Leyendas</a>
+        <a href="#tabla-mitos">Resumen</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
     <!-- Contenido principal -->
     <main>
+
+         <!-- Video introductorio -->
+         <div class="mitos__video">
+            <h1 class="mitos__titulo">¿Cuál es la diferencia entre MITO y LEYENDA?</h1>
+            <video src="video/¿Cuál es la diferencia entre MITO y LEYENDA_.mp4" width="1100" controls></video>
+        </div>
+
+        <!-- Párrafo introductorio -->
+        <p class="mitos__intro">
+            A lo largo de los siglos, las leyendas han formado parte de nuestra cultura, transmitiéndose de generación en generación.
+            Estas historias misteriosas nos permiten conocer las creencias y temores de nuestros ancestros.
+            Sumérgete en este mundo de relatos fascinantes y descubre los mitos más impactantes de Latinoamérica.
+        </p>
+
         <!-- Sección de mitos y leyendas -->
         <section id="mitos">
 
-            <!-- Video introductorio -->
-            <div class="video">
-                <h1>¿Cuál es la diferencia entre MITO y LEYENDA?</h1>
-                <video src="video/¿Cuál es la diferencia entre MITO y LEYENDA_.mp4" width="900" controls></video>
-            </div>
-
-            <!-- Párrafo introductorio -->
-            <p class="intro-paragraph">
-                A lo largo de los siglos, las leyendas han formado parte de nuestra cultura, transmitiéndose de generación en generación.
-                Estas historias misteriosas nos permiten conocer las creencias y temores de nuestros ancestros.
-                Sumérgete en este mundo de relatos fascinantes y descubre los mitos más impactantes de Latinoamérica.
-            </p>
-
-            <article class="flex-la-llorona">
+            <!-- Artículo: La Llorona -->
+            <article class="articulo articulo--llorona">
                 <div>
-                    <h2 class="titulo-llorona">La Llorona</h2>
-                    <img src="images/la llorona.jpg" alt="Imagen de La Llorona" class="imagen-llorona">
+                    <h2 class="articulo__titulo--llorona">La Llorona</h2>
+                    <img src="images/la llorona.jpg" alt="Imagen de La Llorona" class="articulo__imagen--llorona">
                 </div>
-                <div class="texto-llorona">
+                <div class="articulo__texto--llorona">
                     <p>Se dice que hace muchos años, en un pueblo de México, vivía una hermosa mujer llamada María. Era
                         conocida por su extraordinaria belleza y por el amor incondicional que tenía por sus hijos.</p>
                     <p>Un día, María se enamoró de un hombre adinerado y distinguido. Se casaron y tuvieron dos hijos,
@@ -74,13 +76,15 @@
                         por la noche. Algunos creen que su espíritu busca redimirse encontrando a sus hijos, mientras
                         que otros aseguran que se lleva a los pequeños para reemplazarlos.</p>
                 </div>
-                <div class="niebla"></div>
+                <div class="articulo__niebla"></div>
             </article>
+
             <hr>
 
-            <article class="flex-el-silbon">
-                <div class="texto-el-silbon">
-                    <h2 class="titulo-el-silbon">El Silbón</h2>
+            <!-- Artículo: El Silbón -->
+            <article class="articulo articulo--silbon">
+                <div class="articulo__texto--silbon">
+                    <h2 class="articulo__titulo--silbon">El Silbón</h2>
                     <p>En los llanos de Venezuela y Colombia se cuenta la aterradora historia de El Silbón, un espíritu errante que 
                         vaga por los campos y las carreteras desiertas en las noches más oscuras. Su presencia es anunciada por un 
                         silbido escalofriante que recorre las notas musicales de manera ascendente y descendente: si se escucha cerca, 
@@ -96,18 +100,18 @@
                         pues si El Silbón entra a una casa, por la mañana habrá un cadáver en su interior.</p>  
                 </div>
                 <div>
-                    <img src="images/el silbon.jpg" alt="Imagen del silbon" class="imagen-el-silbon">
+                    <img src="images/el silbon.jpg" alt="Imagen del silbon" class="articulo__imagen--silbon">
                 </div>
-                <div class="niebla"></div>
+                <div class="articulo__niebla"></div>
             </article>
             <hr>
 
-            <article class="flex-el-sombreron">
+            <article class="articulo articulo--sombreron">
                 <div>
-                    <h2 class="titulo-el-sombreron">EL Sombreron</h2>
-                    <img src="images/El Sombreron.jpg" alt="Imagen del Sombreron" class="imagen-el-sombreron">
+                    <h2 class="articulo__titulo--sombreron">EL Sombreron</h2>
+                    <img src="images/El Sombreron.jpg" alt="Imagen del Sombreron" class="articulo__imagen--sombreron">
                 </div>
-                <div class="texto-el-sombreron">
+                <div class="articulo__texto--sombreron">
                     <p>En Guatemala y otras regiones de Centroamérica, se cuenta la historia de El Sombrerón, un misterioso y encantador espectro 
                         que aparece durante las noches para atormentar a sus víctimas. Se dice que es un hombre de baja estatura, vestido con ropa 
                         elegante, botas brillantes y un enorme sombrero negro que cubre gran parte de su rostro. Viaja montado en un caballo negro o 
@@ -120,13 +124,13 @@
                         que trenza las crines de los caballos hasta dejarlas imposibles de desenredar y que ata los pelos de los perros durante la noche, 
                         dejando a los animales inquietos y sin descanso.</p>  
                 </div>
-                <div class="niebla"></div>
+                <div class="articulo__niebla"></div>
             </article>
             <hr>
 
-            <article class="flex-chupa-cabras">
-                <div class="texto-chupa-cabras">
-                    <h2 class="titulo-chupa-cabras">El Chupa Cabras</h2>
+            <article class="articulo articulo--chupacabras">
+                <div class="articulo__texto--chupacabras">
+                    <h2 class="articulo__titulo--cabras">El Chupa Cabras</h2>
                     <p>En varias regiones de América Latina y el sur de Estados Unidos, se cuenta la historia del Chupacabras, 
                         una criatura aterradora que ataca a los animales de granja, dejándolos sin vida y completamente drenados 
                         de sangre. Su leyenda comenzó a mediados de los años 90, cuando campesinos y ganaderos empezaron a encontrar 
@@ -140,18 +144,18 @@
                         que alguien pudiera atraparlo.</p>  
                 </div>
                 <div>
-                    <img src="images/chupa-cabras.jpeg" alt="Imagen del chupa cabras" class="imagen-chupa-cabras">
+                    <img src="images/chupa-cabras.jpeg" alt="Imagen del chupa cabras" class="articulo__imagen--chupacabras">
                 </div>
-                <div class="niebla"></div>
+                <div class="articulo__niebla"></div>
             </article>
             <hr>
 
-            <article class="flex-pata-sola">
+            <article class="articulo articulo--patasola">
                 <div>
-                    <h2 class="titulo-pata-sola">La Pata Sola</h2>
-                    <img src="images/la patasola.jpg" alt="Imagen de la Pata Sola" class="imagen-pata-sola">
+                    <h2 class="articulo__titulo--patasola">La Pata Sola</h2>
+                    <img src="images/la patasola.jpg" alt="Imagen de la Pata Sola" class="articulo__imagen--patasola">
                 </div>
-                <div class="texto-pata-sola">
+                <div class="articulo__texto--patasola">
                     <p>Hace muchos años, en una región montañosa, vivía una hermosa mujer casada con un campesino trabajador 
                         y humilde. Aunque su esposo la amaba con devoción, ella no sentía lo mismo y pronto cayó en la 
                         tentación de un amor prohibido. Se dice que engañó a su marido con un hombre apuesto que pasaba por 
@@ -171,9 +175,9 @@
             </article>
             <hr>
 
-            <article class="flex-el-mohan">
-                <div class="texto-el-mohan">
-                    <h2 class="titulo-el-mohan">El Mohán</h2>
+            <article class="articulo articulo--mohan">
+                <div class="articulo__texto--mohan">
+                    <h2 class="articulo__titulo--mohan">El Mohán</h2>
                     <p>En lo más profundo de los ríos y selvas de Colombia, se cuenta la historia del Mohán, una criatura misteriosa 
                         que ha aterrorizado a generaciones. Es descrito como un hombre alto, de piel oscura, con una espesa barba y 
                         una melena enmarañada que cubre su espalda.</p> 
@@ -190,9 +194,14 @@
                         los arrojó al suelo antes de que pudieran tomar siquiera una moneda.</p> 
                 </div>
                 <div>
-                    <img src="images/El mohan.jpg" alt="Imagen del Mohan" class="imagen-el-mohan">
+                    <img src="images/El mohan.jpg" alt="Imagen del Mohan" class="articulo__imagen--mohan">
                 </div>
             </article>
+
+            <blockquote class="mitos__cita">
+                <p>Por lo tanto, pretendo mostrar, no cómo piensan los hombres en los mitos, sino cómo los mitos operan en las mentes de los hombres sin que estos sean conscientes de ello.</p>
+                <cite>— Claude Lévi-Strauss</cite>
+            </blockquote>            
         </section>
 
         <!-- Sección de resumen -->
