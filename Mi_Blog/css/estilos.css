@@ -85,9 +85,11 @@ section {
 
 
 /* Estilos para la parte del video */
-.mitos__video{
-    text-align: center;
+.mitos__video {
+    display: grid;
+    place-items: center; /* Alinea el contenido tanto vertical como horizontalmente */
     margin: 20px auto;
+    text-align: center; /* Alinea el texto en el centro */
 }
 
 .mitos__video h1 {
@@ -99,9 +101,11 @@ section {
     display: inline-block;
 }
 
+
 .mitos__intro {
+    padding: 0 100px;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     margin: 20px;
     color: #333;
 }
